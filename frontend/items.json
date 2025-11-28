@@ -1,0 +1,818 @@
+[
+  {
+    "id": "9e7a343d-9c95-4e20-b045-5b5c2426c93f",
+    "name": "ID",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "f72106b4-ab0d-4a30-b82d-dda8eb8e00e5",
+    "name": "9fe2a1ed-18ed-472b-8f13-efce9d723216",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "9ac599ef-01a7-4fb1-b6eb-f808d86b3eb9",
+    "name": "9fd27c9c-5994-4016-ba46-2b9477b23ded",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "2ed96285-7115-4917-b54e-6ddbd6193795",
+    "name": "9fd08956-7a7b-4dc5-b3a8-1033fc18cc82",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "7879fb4f-4451-4e68-9870-ff0ca33a6423",
+    "name": "9fd06780-22b6-42bd-819c-37cada6d739d",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "1f5f8473-af2c-48bf-91de-b84d3162b161",
+    "name": "9fd0609e-6492-4065-ae92-c3fb0e85cc43",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "e9446fbe-b1fb-4ccc-90b8-01ad09a14cc2",
+    "name": "9fd05f7c-d9df-40d7-a043-04b97d099f94",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "2082fb69-caf1-4888-bc28-950f73950bb3",
+    "name": "9fd016bb-4106-4312-8f5a-e7c55ff5b132",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "184a91fc-6de9-4aa6-a986-fa2bba8f473e",
+    "name": "9fcc16ae-d50d-4ce2-b495-806352bf0909",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "9b860c59-2ea2-40e7-8fa8-f3bc3bc2e778",
+    "name": "9fcc1692-ad9b-4d2d-85c4-d2f6aacaff18",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "532388ee-e1d9-4aac-b3b9-f2cb62991f71",
+    "name": "9fcc1666-fb64-41e7-8ac5-cab60408a41b",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "f9549582-8a8a-4398-9b9e-de20869daf8b",
+    "name": "9fcc1603-e84b-4597-9692-6fa9f0c66e56",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "4c5b7ea2-54fd-4a94-946e-6af14d062565",
+    "name": "9fcc15c0-0a5f-49d1-965c-facab95ad4cf",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "59ff6922-47af-4160-b27f-abc7829c3995",
+    "name": "9fcc1598-d77c-4358-9140-7f2173bb2641",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "8dcd591e-5027-4978-addf-0dda88fb868d",
+    "name": "9fcc1577-e172-440d-a029-a0b640fd5ced",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "35290c61-6d79-4613-8869-6b33bf16b0f4",
+    "name": "9fcc150e-1a95-4113-8fa6-8e61cf41d3c0",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "1b8921bf-25e8-4a03-bb03-b51a50f30e05",
+    "name": "9fcc146d-9eca-4c0c-872c-5421a9c9fcb0",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "b4cd23eb-6cb4-4981-ad4a-b51ae8e29ac1",
+    "name": "9fcc1420-09b9-499a-a119-9cce8accdaa6",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "cad7c047-81af-473e-ada1-79a17eafb435",
+    "name": "9fcc1405-4582-48d8-bbb2-0dd51df6c9da",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "805ef2f9-a931-40c5-b132-30c7dcf98518",
+    "name": "9fcc13ee-3c7b-427c-a02b-ac7f9474fa25",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "25ae0a38-5556-4a60-a7b1-f4d734ec35f2",
+    "name": "9fcc13cd-a939-4203-ae4a-50efda2a4ddc",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "de8e3c13-9a72-47d2-bcbe-03bc8bf7737a",
+    "name": "9fcc1372-bf32-4aa8-8f78-caa65e0d7ec8",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "6d157c48-3e0d-42c0-acaf-e6a9136508d9",
+    "name": "9fcc12e4-2db7-464d-ab52-8255994e6de2",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "f10a72d3-1ec7-4fa4-a0bf-7da9e0f111e7",
+    "name": "9fcc0faa-0735-425e-a7f9-ebbb881bda78",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "13e60d04-b20a-4676-81fb-e3f53c7d3cc4",
+    "name": "9fcc0f60-710a-457a-9730-0cece2f750de",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "8bafcfbe-2d17-4870-9426-a31d7381c1bc",
+    "name": "9fcc0efb-c1c8-4cd4-a7c9-c872b283f0e8",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "2209b7ad-468a-4424-bbb8-ffe2057c1351",
+    "name": "9fcc0eca-65bf-4402-9fd3-4fb3a8fa79ac",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "fa7541e3-8c63-4726-a64d-41aa4c12297a",
+    "name": "9fcbe81f-8fac-4016-90d5-b89785ba7f0f",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "97d9743f-7ea8-4731-89e7-0a0f83264e2f",
+    "name": "9fcbe80b-0731-4f0a-8f35-87fe143b874a",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "1b5baf89-fa8c-402e-9e9a-0af40f2555b6",
+    "name": "9fcbe7e8-b4d5-4c46-9b31-4528a977223b",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "22dc7822-b98c-4b49-9af3-1340d47bb90b",
+    "name": "9fcbe797-6d69-47de-b86b-e738c2a30d80",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "9f4aefd9-49eb-4991-bf40-6daaad4e0b71",
+    "name": "9fcbe76e-9e0a-4252-b5a3-3479d121efd3",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "5ca80aaa-bb1c-4dc5-979d-a05db6986aa7",
+    "name": "9fcbe74e-5106-42a8-9f77-889039860567",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "7eced8f9-bcf6-485b-8546-6579ec6a975b",
+    "name": "9fcbe71d-07dc-4381-972d-d711e21f1987",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "e4d4ee94-d41f-4980-be10-979ae5d1ddb8",
+    "name": "9fcbe6fb-3279-48ac-819b-00dd0ec04eff",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "25252a79-3283-47c3-8742-7e6b32e8f12b",
+    "name": "9fcbe6d6-fd24-4142-829f-e434f4b7d9a8",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "d00d6207-071a-44ff-93bc-0df11658256f",
+    "name": "9fcbe6a6-1a77-4025-99b7-8361943759e5",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "199efdb5-d55b-44e9-b758-f2cc95a85034",
+    "name": "9fcbe689-2e57-475a-be94-66ea857ef948",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "303f9fa1-b99c-462d-a8dd-f3df0410f0bd",
+    "name": "9fcbe66b-fdd6-48e0-822d-9beac6e8d43f",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "40bd23ce-67ef-48b8-b37b-fdddc3f9619a",
+    "name": "9fcbe63f-0a85-435d-892d-17c676cb12d4",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "42b4f358-3231-45e9-86a8-068ade6c5b2d",
+    "name": "9fcbe614-c50e-47d3-82e5-d20804d55fda",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "7960b97a-9c2d-4bf1-a201-c18a5c4ba7e5",
+    "name": "9fcbe5d6-5301-41f0-b665-b8178669f819",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "9d47d668-9700-438e-b7b3-52ff4146b980",
+    "name": "9fcbe5b2-d92b-47ee-9532-5226a8350ad6",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "018e2ff4-bf1e-4ac0-809c-291f4a3ad279",
+    "name": "9fcbe576-7327-49c0-a5c8-64308e1992be",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "302b73ba-34a7-4f7a-8cc3-e9be808eb823",
+    "name": "9fcbe554-8e60-42ec-b948-e614244e2134",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "18b6fe78-2f49-4be5-b256-47d632a4b022",
+    "name": "9fcbe534-a78f-4316-963b-7e2f19afa64f",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "161c4094-ca8e-494e-8655-584dd326b016",
+    "name": "9fcbe4b5-a16b-4fa1-9ce7-3736dba8e476",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "80896d9f-7e5e-44b1-8cf5-b00634392930",
+    "name": "9fcbe498-3b8d-4cd0-ad6a-9fe2c447f758",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "ee71e32d-f50c-4cca-b7ac-86cc2454ae07",
+    "name": "9fcbe47d-d025-496e-b9a1-c715ecbee582",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "4b912cf4-100d-4e67-8b82-f6feffe2b5a9",
+    "name": "9fcbe462-f4f7-4941-9d0f-4b003426d51d",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "8172142c-15ba-4941-8e62-8f1e1ae28413",
+    "name": "9fcbe432-a3bc-4232-b9e6-abb86054217a",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "836806bf-7eb2-4df3-8032-1e60e83a1c3b",
+    "name": "9fcbe416-962c-4352-8c48-7b9bff6c0c28",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "58e209ba-46d1-477d-96ec-5b6d71a05f77",
+    "name": "9fcbe3f6-a6e3-4a4b-8c13-8d2d24880b01",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "a19c362c-f18d-4918-9e1e-b07753a0ab9f",
+    "name": "9fcbe3d8-36d5-48ec-a55f-60393fbadfd9",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "9d8ca7ac-ef3f-4bc7-b594-9ca8bb92a761",
+    "name": "9fcbe3ba-e1e9-400d-8257-3c6b3fc62853",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "62e3aedc-cb56-4407-b06b-de542a309bc0",
+    "name": "9fcbe399-36ca-48e0-8555-369b47361026",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "7196a1f8-3286-45e4-802d-505daaecbba1",
+    "name": "9fcbe375-1440-46c6-9bf3-93f85127e5c3",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "b1b3e4b9-46fc-4342-853b-f4a02eee42d5",
+    "name": "9fcbe355-e25e-415b-871a-d6d790c6bbf9",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "7745f56b-2e3b-4a44-87fb-aa1c21445024",
+    "name": "9fcbe327-7bce-4652-b981-b35c393dbd0b",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "e0a8806f-b101-4c2a-b870-3b46061538b4",
+    "name": "9fcbe304-d971-4ce1-b8c2-22cfa5d128f6",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "052f6568-1922-450e-8ed0-36c27db34cbe",
+    "name": "9fcbdcf3-8b20-4e3d-aa90-2dc07e84e496",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "c59486f4-f033-4bdf-bf1a-9853c920d714",
+    "name": "9fcbdcdc-f02f-41e1-ac45-ea78044e9ec1",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "f6962dee-9d86-41ae-9b67-0977c9f3058d",
+    "name": "9fcbdcd1-8764-4d06-ad24-793201682c2f",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "ef67c663-1b92-44a5-9c60-082aa91e8c42",
+    "name": "9fcbd9d8-304d-40d7-b318-4e1c3200e690",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "8ac8bfb1-c56d-4673-9e2c-9ebbc37cd231",
+    "name": "9fcbd9bf-5c44-4fc7-b912-f95c402bab09",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "ba85657e-6cda-4854-a518-a49b23a8a9fc",
+    "name": "9fcbd9a1-b6f4-4c21-a754-217ebf22223f",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "28d35894-5e61-45a9-a068-587e1593fd8e",
+    "name": "9fcbd97d-ffe7-4d01-9e13-efc266539286",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "dd8546b4-83b5-4bc6-a812-dd034ebe10a7",
+    "name": "9fcbd924-cfcb-4b1f-9f3c-30bb585be8ad",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "9d8cccc0-c4bf-4bcb-a439-00bb482851b5",
+    "name": "9fcbd8f2-8c61-47b3-8df4-3ddea1aec479",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "9f2c782a-0761-43ea-8b70-8549ff3033c6",
+    "name": "9fcbd8cb-30a9-4258-992a-224b42b5c9ad",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "18868899-34aa-4a59-ac52-2f12aa782ead",
+    "name": "9fcbd8a9-57b0-49f7-99e7-2116a82f33a8",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "e72994a6-0cf3-40b6-97a6-3cfef1e11d2b",
+    "name": "9fcbd88b-1869-4827-b970-abf3e6ee691b",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "29d1be3d-cef9-43d0-9784-de8e6d4f977c",
+    "name": "9fcbd871-9399-4de7-aef4-748829772c96",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "82f615f8-4b1d-446b-a749-4f52872c234d",
+    "name": "9fcbd7c7-221f-44a2-b9a0-6cfa93f1f6b3",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "38ee4351-f7d6-4bea-88c0-ffddc61db38d",
+    "name": "9fcbd78f-815c-4b87-a5e7-59a0f0c0f621",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "ec37f694-9e61-47cd-9cd3-a096c4b6d1ae",
+    "name": "9fcbd761-de1e-49b0-aef8-e0f92494f306",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "3687d559-8eca-43f8-996b-0ff44fde0eb7",
+    "name": "9fcbd72e-00b3-4507-8041-907e40f085f5",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "b1a5e1d6-258c-4139-8391-96b874bb6664",
+    "name": "9fcbd70a-1919-47d2-b0bf-60645b904d6d",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "31b08f74-39b6-4d11-872b-a66a66d5097b",
+    "name": "9fcbd6eb-5b55-495f-bc73-e9edc54978db",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "6e5f736f-1d3b-47d2-bc86-da2941fe3946",
+    "name": "9fcbd6cd-f0cd-4e7e-86a1-30d65da5c9e6",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "8c300222-0608-40a3-9994-faa71687c7af",
+    "name": "9fcbd6ab-5c06-4012-8cce-628538f2aa4b",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "69c79968-7846-46c3-9200-21f1523b1537",
+    "name": "9fcbd035-542d-4462-8eb4-4318275ceef0",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "a17134fb-9ab7-4d43-bb5b-d4c2f15c07c2",
+    "name": "9fcbcfe8-8913-4b95-8b84-d2cb406f3234",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "864db349-32f3-46e1-8d77-05f0aa98a432",
+    "name": "9fcbcfab-dab7-4410-b458-0c68a0568f28",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "1c0be800-51f2-4b9f-af04-7997e3abda56",
+    "name": "9fcbcf65-7721-4b3d-9639-540819f7841f",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "17bc2cd3-c14f-40be-ac98-bb210a760b50",
+    "name": "9fcbcf11-447f-4464-9d92-f3355ff2449b",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "42dd30f2-cf62-41b2-b6f7-e964aca570ed",
+    "name": "9fcbcee5-4863-4185-b9dc-8b64535a66b1",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "e471fb03-6929-4dfa-b1a1-04c15ba6f58d",
+    "name": "9fcbce91-319e-45e2-a3e4-9bdb3dcfeef2",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "40a2fe6a-14dd-4fbc-ab5e-17d7bb38be1c",
+    "name": "9fcaac10-d00f-4be8-81cf-806d94a8dbcc",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "36d02be4-aff6-49fe-ac2b-947e870d89fe",
+    "name": "9fcaa93d-cf09-4637-9435-1f2ea6405457",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "ff2816a0-04f2-4648-9621-3428a68aa442",
+    "name": "9fcaa4e3-3989-4ea8-bfa8-4c1904804d7c",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "a56573e7-d9d3-496f-b21b-55237055d071",
+    "name": "9fcaa44f-ddf8-48a7-988e-4b60efb4ffb3",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "d9391f40-11cf-43c6-a138-fd282142ab2a",
+    "name": "9fcaa3f2-1bfa-4d08-851f-471ce99f9bea",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "8d51bb0d-92e8-4170-9be7-3fa63041d328",
+    "name": "9fca1c98-3603-4fd9-b6ee-5f2cd5291323",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "593201e2-781c-4f81-854d-828f6228e510",
+    "name": "9e70a6e7-df52-4210-9a26-899d1a251af7",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "9f4846a6-a458-440f-9aa3-6c18a262b755",
+    "name": "9e70a6e8-3793-4be2-9c7d-8503f55a3856",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "cde798b1-2218-4b0f-a72b-67d3c560e183",
+    "name": "9e70a629-3deb-48f7-9f9d-619a10eb69a2",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "841ac189-fa88-4aa0-a754-00e96eee3f59",
+    "name": "9e70a629-5607-482f-8b51-565cbf77b317",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "a54a0604-5a13-45f5-9b75-a8e399c7881f",
+    "name": "9e70a629-61c3-4ea2-b212-6e19373efe2f",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "e98cbb31-79b4-4a9e-abf6-56f47d5bfeb4",
+    "name": "9e70a629-6cc9-480f-94f1-cc5f568e1a2d",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "bc089d8e-70e2-4b17-9749-dd49751bee47",
+    "name": "9e70a629-76f6-4496-aaa4-43b352bf7c65",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  },
+  {
+    "id": "2534659c-c11d-4324-826b-b090f7924097",
+    "name": "9e70a629-80af-4e24-87a9-18efac2b9c0c",
+    "category": "Uncategorized",
+    "price_net": 0.0,
+    "vat_percent": 24.0,
+    "price_with_vat": 0.0
+  }
+]
