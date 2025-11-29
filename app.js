@@ -151,10 +151,9 @@ $(document).ready(function () {
 
     // preload menu images
     const images = [
-        "./images/back.jpg",
-        "./images/hbgr.jpg",
-        "./images/hbgr.png",
-        "./images/kaif_vec.svg"
+        "https://raw.githubusercontent.com/whiskakii/kaif_oc/refs/heads/main/images/back.jpg",
+        "https://raw.githubusercontent.com/whiskakii/kaif_oc/refs/heads/main/images/hbgr.png",
+        "https://raw.githubusercontent.com/whiskakii/kaif_oc/55210e34a66a1be953f4b2be1a96d0b53ffd19ef/images/kaif_vec.svg"
     ];
 
     let loaded = 0;
