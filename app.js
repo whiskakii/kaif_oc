@@ -158,7 +158,7 @@ $(document).ready(function () {
 
     let loaded = 0;
 
-    $.each(images, function (i, src) {
+    /* $.each(images, function (i, src) {
         $('<img/>')
             .attr('src', src)
             .on('load', function () {
@@ -169,7 +169,7 @@ $(document).ready(function () {
                     console.log('loaded:', loaded);
                 }
             });
-    });
+    }); */
 
     // menu constructor
     menu_constructor();
