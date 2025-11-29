@@ -151,10 +151,10 @@ $(document).ready(function () {
 
     // preload menu images
     const images = [
-        "images/back.jpg",
-        "images/hbgr.jpg",
-        "images/hbgr.png",
-        "images/kaif_vec.svg"
+        "./images/back.jpg",
+        "./images/hbgr.jpg",
+        "./images/hbgr.png",
+        "./images/kaif_vec.svg"
     ];
 
     let loaded = 0;
