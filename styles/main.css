@@ -38,7 +38,8 @@ body {
     gap: 20px;
     padding: 10px;
     margin: 0 auto;
-    background-color: red;
+    background-color: rgb(32, 32, 32);
+    color: #fff;
 }
 
 .menu-view {
