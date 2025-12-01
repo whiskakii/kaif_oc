@@ -1,111 +1,9 @@
-const items = {
-    coffee: {
-        category: 'Coffee And More...',
-        items: [
-            { title: 'ESPRESSO', price: '2', desc: 'Διπλός +0,50€' },
-            { title: 'ESPRESSO LUNGO', price: '2', desc: 'Διπλός +0,50€' },
-            { title: 'CAPPUCCINO', price: '2', desc: 'Διπλός +0,50€' },
-            { title: 'AMERICANO', price: '2', desc: 'Διπλός +0,50€' },
-            { title: 'FREDDO CAPPUCINO', price: '2,5', desc: 'Κρύος cappuccino' },
-            { title: 'FREDDO ESPRESSO', price: '2,5', desc: 'Κρύος espresso' },
-            { title: 'FRAPPE', price: '2', desc: 'Κρύος καφές' },
-            { title: 'NES', price: '2', desc: 'Nescafe' },
-            { title: 'ΦΙΛΤΡΟΥ', price: '2,5', desc: 'Καφές φίλτρου' },
-            { title: 'ΕΛΛΗΝΙΚΟΣ', price: '1,5', desc: 'Διπλός +0,50€' },
-            { title: 'ΣΟΚΟΛΆΤΑ', price: '2,5', desc: 'Σπέσιαλ +0,50€' },
-        ]
-    },
-
-    iced_tea: {
-        category: 'ICED TEA',
-        items: [
-            { title: 'ΠΡΑΣΙΝΟ ΤΣΑΙ', price: '2,5', desc: 'Διπλός +0,50€' },
-            { title: 'ΛΕΜΟΝΙ', price: '2,5', desc: 'Διπλός +0,50€' },
-            { title: 'ΡΟΔΑΚΙΝΟ', price: '2,5', desc: 'Διπλός +0,50€' },
-        ]
-    },
-
-    beers: {
-        category: 'Μπυρες',
-        items: [
-            { title: 'DRAFT KAISER', price: '4', desc: 'Μεγάλη 5,5€' },
-            { title: 'ΑΛΦΑ', price: '3,5', desc: 'Φιάλη 500ml' },
-            { title: 'ΦΙΞ', price: '3,5', desc: 'Φιάλη 500ml' },
-            { title: 'AMSTEL', price: '3,5', desc: 'Φιάλη 500ml' },
-            { title: 'MYTHOS RADLER', price: '3,5', desc: 'Φιάλη 330ml' },
-            { title: 'ΦΙΞ ΑΝΕΥ', price: '3', desc: 'Φιάλη 330ml' },
-            { title: 'CORONA', price: '5', desc: 'Φιάλη 330ml' },
-        ]
-    },
-
-    soft: {
-        category: 'Αναψυκτικα',
-        items: [
-            { title: 'Coca-Cola', price: '2,5', desc: 'Regular, Zero 250ml' },
-            { title: 'Fanta', price: '2,5', desc: 'Πορτοκάλι, Λεμόνι 250ml' },
-            { title: 'Sprite', price: '2,5', desc: '250ml' },
-            { title: 'Tuborg', price: '2,5', desc: 'Club Soda, Pink Grapefruit, Στυμμένο Λεμόνι' },
-            { title: 'Red Bull', price: '5', desc: '' },
-        ]
-    },
-
-    juice: {
-        category: 'Χυμοι',
-        items: [
-            { title: 'VIVA', price: '2,5', desc: 'Πορτοκάλι, Ροδάκινο, Μπανάνα, Βύσσινο, Κοκτέιλ' },
-            { title: 'Φρέσκος Πορτοκαλιού', price: '3,5', desc: '' },
-        ]
-    },
-
-    water: {
-        category: 'Νερο',
-        items: [
-            { title: 'Σέλι Φυσικό Μεταλλικό Νερό', price: '0,50', desc: '1 Λίτρο +1.00€' },
-        ]
-    },
-
-    drinks: {
-        category: 'Ποτά',
-        items: [
-            { title: 'Απλό', price: '6', desc: '' },
-            { title: 'Special', price: '8', desc: '' },
-            { title: 'Premium', price: '10', desc: '' },
-        ]
-    },
-
-    burgers: {
-        category: 'Μπιφτεκοψωμα',
-        items: [
-            { title: 'Απλό & Λιτό', price: '4,5', desc: 'Μπιφτέκι με κέτσαπ και μουστάρδα.' },
-            { title: 'Cheeseburger', price: '5', desc: 'Μπιφτέκι με τσένταρ, σος πίκλας και σος μουστάρδας.' },
-            { title: 'ΜΠΙ-ΜΠΙ-ΚΙΟΥ', price: '5,5', desc: 'Μπιφτέκι με τσένταρ, BBQ σος, μπέικον, μαρούλι και ντομάτα..' },
-        ]
-    },
-
-    clubs: {
-        category: 'Τριγωνοψωμα',
-        items: [
-            { title: 'Αλλαντικών', price: '5', desc: 'Ψωμί του τοστ με γκούντα, ζαμπόν, μπέικον, μαγιονέζα, μαρούλι και ντομάτα.' },
-            { title: 'Αλά Γκρέκο', price: '6,5', desc: 'Πίτα Σιδέρη με σος μουστάρδας, γύρο χοιρινό, γκούντα, μπέικον, μαρούλι και ντομάτα.' },
-        ]
-    },
-
-    plates: {
-        category: 'Πιατέλες',
-        items: [
-            { title: 'Αλλαντικών', price: '5', desc: 'Ψωμί του τοστ με γκούντα, ζαμπόν, μπέικον, μαγιονέζα, μαρούλι και ντομάτα.' },
-            { title: 'Αλά Γκρέκο', price: '6,5', desc: 'Πίτα Σιδέρη με σος μουστάρδας, γύρο χοιρινό, γκούντα, μπέικον, μαρούλι και ντομάτα.' },
-        ]
-    },
-};
-
-
-const menu_constructor = () => {
+const menu_constructor = (MENU) => {
     const $categories_container = $('#categories');
     const $menu_container = $('#catalog');
 
     // construct categories
-    $.each(items, function (cat, obj) {
+    $.each(MENU, function (cat, obj) {
         const $button = $('<button></button>').text(obj.category).attr('data-target', cat);
 
         $button.on('click', function () {
@@ -116,11 +14,12 @@ const menu_constructor = () => {
     });
 
     // construct menu items
-    $.each(items, function (cat, obj) {
+    $.each(MENU, function (cat, obj) {
         const $section = $('<section></section>').attr('id', cat).addClass('category-section');
         const $h2 = $('<h2></h2>').text(obj.category);
         $section.append($h2);
 
+        console.log(obj)
 
         $.each(obj.items, function (i, item) {
             const $item_div = $('<div></div>').addClass('item');
@@ -147,7 +46,7 @@ $(document).on('click', '.r_menu', function () {
     window.location.href = 'menu.html'
 });
 
-$(document).ready(function () {
+$(document).ready(async function () {
 
     // preload menu images
     const images = [
@@ -158,7 +57,7 @@ $(document).ready(function () {
 
     let loaded = 0;
 
-    /* $.each(images, function (i, src) {
+    $.each(images, function (i, src) {
         $('<img/>')
             .attr('src', src)
             .on('load', function () {
@@ -169,10 +68,22 @@ $(document).ready(function () {
                     console.log('loaded:', loaded);
                 }
             });
-    }); */
+    });
+
+    // load menu
+    
+    try {
+        const res = await fetch('./items.json');
+        const data = await res.json();
+        console.log(data.menu); // εδώ έχεις όλο το μενού
+
+        menu_constructor(data.menu);
+    } catch (err) {
+        console.error('JSON load error:', err);
+    }
 
     // menu constructor
-    menu_constructor();
+    
 
     // scroll shit
     const scroll_btn = $('<button id="scroll_to_top_btn">↑</button>');
