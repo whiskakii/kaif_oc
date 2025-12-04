@@ -107,9 +107,9 @@ $(document).ready(async function () {
         let dist_from_bottom = doc_height - (scroll_top + win_height);
 
         if (scroll_top > 150 && dist_from_bottom > 200) {
-            $('#rate-banner').fadeIn(300);
+            $('#rate_banner').fadeIn(300);
         } else {
-            $('#rate-banner').fadeOut(300);
+            $('#rate_banner').fadeOut(300);
         }
 
         let pos = $(window).scrollTop();
@@ -146,7 +146,7 @@ $(document).ready(async function () {
     });
 
     // google rate promo button
-    $("#rate-banner").on("click", function() {
+    $("#rate_banner").on("click", function() {
         window.open("https://search.google.com/local/writereview?placeid=ChIJNx0QS2J7VxMRBgbs8Gz5zQI", "_blank");
     });
 

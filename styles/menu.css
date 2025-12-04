@@ -292,7 +292,7 @@ footer .logo img {
     gap: 10px;
 }
 
-#rate-banner {
+#rate_banner {
     display: none;
     background: #0A0B0A;
     color: #EFE7D2;
@@ -306,4 +306,9 @@ footer .logo img {
     width: 100%;
     z-index: 99999;
     border-top: 1px #333330 dashed;
+}
+
+#rate_stars {
+    color: gold;
+    text-shadow: 0 0 5px goldenrod;
 }
