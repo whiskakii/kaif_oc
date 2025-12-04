@@ -46,6 +46,10 @@ $(document).on('click', '.r_menu', function () {
     window.location.href = 'menu.html'
 });
 
+$(document).on('click', '.not_found_home', function () {
+    window.location.href = '/'
+});
+
 $(document).ready(async function () {
 
     // preload menu images
@@ -64,7 +68,7 @@ $(document).ready(async function () {
                 loaded++;
 
                 if (loaded === images.length) {
-                    $('#loading').html('<button class="r_menu">ΤΙΜΟΚΑΤΑΛΟΓΟΣ</button>');
+                    $('#loading').html('<button class="r_menu button_1">ΤΙΜΟΚΑΤΑΛΟΓΟΣ</button>');
                     console.log('loaded:', loaded);
                 }
             });
