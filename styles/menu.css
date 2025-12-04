@@ -22,7 +22,7 @@ button:focus {
 body {
     margin: 0;
     font-family: var(--font_family_ibm);
-    background: url('../images/hbgr.png');
+    background: url('https://raw.githubusercontent.com/whiskakii/kaif_oc/refs/heads/main/images/hbgr.png');
     background-color: #0A0B0A;
     background-size: cover;
     background-position: center;
@@ -33,7 +33,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 180px;
-    background: url('../images/hbgr.png');
+    background: url('https://raw.githubusercontent.com/whiskakii/kaif_oc/refs/heads/main/images/hbgr.png');
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -268,12 +268,28 @@ section h2 {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     background: #0A0B0A;
     padding: 20px;
     color: #fff;
     text-align: center;
     margin-top: 40px;
-    font-size: 14px;
+    font-size: 10px;
+}
+
+footer .logo img {
+    width: 70px;
+    height: auto;
+}
+
+.footer_info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
 }
 
 #rate-banner {

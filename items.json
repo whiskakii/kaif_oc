@@ -60,6 +60,26 @@
         }
       ]
     },
+    "tea": {
+      "category": "TEA MENU",
+      "items": [
+        {
+          "title": "ΠΡΑΣΙΝΟ ΤΣΑΙ",
+          "price": "2,5",
+          "desc": "Διπλός +0,50€"
+        },
+        {
+          "title": "ΛΕΜΟΝΙ",
+          "price": "2,5",
+          "desc": "Διπλός +0,50€"
+        },
+        {
+          "title": "ΡΟΔΑΚΙΝΟ",
+          "price": "2,5",
+          "desc": "Διπλός +0,50€"
+        }
+      ]
+    },
     "iced_tea": {
       "category": "ICED TEA",
       "items": [
@@ -77,6 +97,76 @@
           "title": "ΡΟΔΑΚΙΝΟ",
           "price": "2,5",
           "desc": "Διπλός +0,50€"
+        }
+      ]
+    },
+    "soft": {
+      "category": "Αναψυκτικα",
+      "items": [
+        {
+          "title": "Coca-Cola",
+          "price": "2,5",
+          "desc": "Regular, Zero 250ml"
+        },
+        {
+          "title": "Fanta",
+          "price": "2,5",
+          "desc": "Πορτοκάλι, Λεμόνι 250ml"
+        },
+        {
+          "title": "Sprite",
+          "price": "2,5",
+          "desc": "250ml"
+        },
+        {
+          "title": "Tuborg",
+          "price": "2,5",
+          "desc": "Club Soda, Στυμμένο Λεμόνι"
+        },
+        {
+          "title": "Three Cents",
+          "price": "3,5",
+          "desc": "Pink Grapefruit"
+        },
+        {
+          "title": "Red Bull",
+          "price": "5",
+          "desc": ""
+        }
+      ]
+    },
+    "juice": {
+      "category": "Χυμοι",
+      "items": [
+        {
+          "title": "VIVA",
+          "price": "2,5",
+          "desc": "Πορτοκάλι, Ροδάκινο, Μπανάνα, Βύσσινο, Κοκτέιλ"
+        },
+        {
+          "title": "Φρέσκος Πορτοκαλιού",
+          "price": "3,5",
+          "desc": ""
+        }
+      ]
+    },
+    "fofo": {
+      "category": "ΣΠΙΤΙΚΟΙ ΧΥΜΟΙ `ΦΩΦΩ`",
+      "items": [
+        {
+          "title": "ΦΩΦΩ",
+          "price": "3,5",
+          "desc": "Λεμόνι, Βύσσινο, Ροδάκινο, Φράουλα, Pink Grapefruit και Λεμόνι"
+        }
+      ]
+    },
+    "water": {
+      "category": "Νερο",
+      "items": [
+        {
+          "title": "Σέλι Φυσικό Μεταλλικό Νερό",
+          "price": "0,50",
+          "desc": "1 Λίτρο +1.00€"
         }
       ]
     },
@@ -120,61 +210,6 @@
         }
       ]
     },
-    "soft": {
-      "category": "Αναψυκτικα",
-      "items": [
-        {
-          "title": "Coca-Cola",
-          "price": "2,5",
-          "desc": "Regular, Zero 250ml"
-        },
-        {
-          "title": "Fanta",
-          "price": "2,5",
-          "desc": "Πορτοκάλι, Λεμόνι 250ml"
-        },
-        {
-          "title": "Sprite",
-          "price": "2,5",
-          "desc": "250ml"
-        },
-        {
-          "title": "Tuborg",
-          "price": "2,5",
-          "desc": "Club Soda, Pink Grapefruit, Στυμμένο Λεμόνι"
-        },
-        {
-          "title": "Red Bull",
-          "price": "5",
-          "desc": ""
-        }
-      ]
-    },
-    "juice": {
-      "category": "Χυμοι",
-      "items": [
-        {
-          "title": "VIVA",
-          "price": "2,5",
-          "desc": "Πορτοκάλι, Ροδάκινο, Μπανάνα, Βύσσινο, Κοκτέιλ"
-        },
-        {
-          "title": "Φρέσκος Πορτοκαλιού",
-          "price": "3,5",
-          "desc": ""
-        }
-      ]
-    },
-    "water": {
-      "category": "Νερο",
-      "items": [
-        {
-          "title": "Σέλι Φυσικό Μεταλλικό Νερό",
-          "price": "0,50",
-          "desc": "1 Λίτρο +1.00€"
-        }
-      ]
-    },
     "drinks": {
       "category": "Ποτά",
       "items": [
@@ -211,7 +246,7 @@
         {
           "title": "ΜΠΙ-ΜΠΙ-ΚΙΟΥ",
           "price": "5,5",
-          "desc": "Μπιφτέκι με τσένταρ, BBQ σος, μπέικον, μαρούλι και ντομάτα.."
+          "desc": "Μπιφτέκι με τσένταρ, BBQ σος, μπέικον, μαρούλι και ντομάτα."
         }
       ]
     },
