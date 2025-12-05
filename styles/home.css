@@ -59,7 +59,7 @@ h3 {
 /* ====== HERO ====== */
 
 .landing-hero {
-  height: 330px;
+  height: auto;
   /* background:url("../images/back.jpg")center/cover fixed; */
   display: flex;
   align-items: center;
@@ -84,12 +84,15 @@ h3 {
 }
 
 .hero-sub {
+  max-width: 380px;
   font-size: 14px;
   opacity: .85;
-  margin-bottom: 22px;
+  margin: 22px auto;
+  text-align: left;
 }
 
 .hero-cta {
+  margin-top: 64px;
   display: flex;
   gap: 12px;
   justify-content: center;
