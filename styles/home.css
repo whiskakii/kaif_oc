@@ -84,10 +84,14 @@ h3 {
 }
 
 .hero-sub {
-  max-width: 370px;
-  font-size: 14px;
+  max-width: 380px;
   opacity: .85;
   margin: 22px auto;
+}
+
+.hero-card {
+  padding: 12px;
+  font-size: 14px;
   text-align: left;
 }
 
