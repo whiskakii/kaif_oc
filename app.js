@@ -19,17 +19,18 @@ const menu_constructor = (MENU) => {
         const $h2 = $('<h2></h2>').text(obj.category);
         $section.append($h2);
 
-        console.log(obj)
+
 
         $.each(obj.items, function (i, item) {
             const $item_div = $('<div></div>').addClass('item');
             const $item_header = $('<div></div>').addClass('item-header');
             const $title_span = $('<span></span>').addClass('item-title').text(item.title);
             const $price_span = $('<span></span>').addClass('item-price').text(item.price + "€");
+            
             $item_header.append($title_span, $price_span);
 
 
-            const $item_desc = $('<div></div>').addClass('item-desc').text(item.desc);
+            const $item_desc = $('<div></div>').addClass('item-desc').html(item.desc);
 
 
             $item_div.append($item_header, $item_desc);
@@ -69,7 +70,6 @@ $(document).ready(async function () {
 
                 if (loaded === images.length) {
                     $('#loading').html('<button class="r_menu button_1">ΤΙΜΟΚΑΤΑΛΟΓΟΣ</button>');
-                    console.log('loaded:', loaded);
                 }
             });
     });
@@ -79,7 +79,6 @@ $(document).ready(async function () {
     try {
         const res = await fetch('./items.json');
         const data = await res.json();
-        console.log(data.menu); // εδώ έχεις όλο το μενού
 
         menu_constructor(data.menu);
     } catch (err) {

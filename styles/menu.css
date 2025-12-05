@@ -312,3 +312,14 @@ footer .logo img {
     color: gold;
     text-shadow: 0 0 5px goldenrod;
 }
+
+.discount {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 2px;
+    float: right;
+    font-weight: bold;
+    background: rgba(0, 188, 138, 0.15);
+    color: #00bc8b;
+    
+}
