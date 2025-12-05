@@ -1,178 +1,308 @@
-const menu_constructor = (MENU) => {
-    const $categories_container = $('#categories');
-    const $menu_container = $('#catalog');
+// app.js
+// KAIF – Menu logic (optimized, semantic, responsive)
+// Απαιτεί jQuery
 
-    // construct categories
-    $.each(MENU, function (cat, obj) {
-        const $button = $('<button></button>').text(obj.category).attr('data-target', cat);
+(function ($) {
+  "use strict";
 
-        $button.on('click', function () {
-            $('#' + cat)[0].scrollIntoView({ behavior: 'smooth' });
-        });
+  // -----------------------------
+  // Constants
+  // -----------------------------
 
-        $categories_container.append($button);
-    });
+  const IMAGE_SOURCES = [
+    "https://raw.githubusercontent.com/whiskakii/kaif_oc/refs/heads/main/images/back.jpg",
+    "https://raw.githubusercontent.com/whiskakii/kaif_oc/refs/heads/main/images/hbgr.png",
+    "https://raw.githubusercontent.com/whiskakii/kaif_oc/55210e34a66a1be953f4b2be1a96d0b53ffd19ef/images/kaif_vec.svg"
+  ];
 
-    // construct menu items
-    $.each(MENU, function (cat, obj) {
-        const $section = $('<section></section>').attr('id', cat).addClass('category-section');
-        const $h2 = $('<h2></h2>').text(obj.category);
-        $section.append($h2);
+  const SCROLL_TOP_THRESHOLD = 200;
+  const GOOGLE_REVIEW_MIN_SCROLL = 150;
+  const GOOGLE_REVIEW_MIN_DISTANCE_FROM_BOTTOM = 200;
+  const ACTIVE_SECTION_OFFSET_TOP = 120;
+  const SCROLL_TO_TOP_DURATION = 400;
 
+  const GOOGLE_REVIEW_URL =
+    "https://search.google.com/local/writereview?placeid=ChIJNx0QS2J7VxMRBgbs8Gz5zQI";
 
+  // -----------------------------
+  // Helpers
+  // -----------------------------
 
-        $.each(obj.items, function (i, item) {
-            const $item_div = $('<div></div>').addClass('item');
-            const $item_header = $('<div></div>').addClass('item-header');
-            const $title_span = $('<span></span>').addClass('item-title').text(item.title);
-            const $price_span = $('<span></span>').addClass('item-price').text(item.price + "€");
-            
-            $item_header.append($title_span, $price_span);
+  function getElement(selector) {
+    const $el = $(selector);
+    return $el.length ? $el : null;
+  }
 
-
-            const $item_desc = $('<div></div>').addClass('item-desc').html(item.desc);
-
-
-            $item_div.append($item_header, $item_desc);
-            $section.append($item_div);
-        });
-
-
-        $menu_container.append($section);
-    });
-};
-
-
-$(document).on('click', '.r_menu', function () {
-    window.location.href = 'menu.html'
-});
-
-$(document).on('click', '.not_found_home', function () {
-    window.location.href = '/'
-});
-
-$(document).ready(async function () {
-
-    // preload menu images
-    const images = [
-        "https://raw.githubusercontent.com/whiskakii/kaif_oc/refs/heads/main/images/back.jpg",
-        "https://raw.githubusercontent.com/whiskakii/kaif_oc/refs/heads/main/images/hbgr.png",
-        "https://raw.githubusercontent.com/whiskakii/kaif_oc/55210e34a66a1be953f4b2be1a96d0b53ffd19ef/images/kaif_vec.svg"
-    ];
-
-    let loaded = 0;
-
-    $.each(images, function (i, src) {
-        $('<img/>')
-            .attr('src', src)
-            .on('load', function () {
-                loaded++;
-
-                if (loaded === images.length) {
-                    $('#loading').html('<button class="r_menu button_1">ΤΙΜΟΚΑΤΑΛΟΓΟΣ</button>');
-                }
-            });
-    });
-
-    // load menu
-    
-    try {
-        const res = await fetch('./items.json');
-        const data = await res.json();
-
-        menu_constructor(data.menu);
-    } catch (err) {
-        console.error('JSON load error:', err);
+  function preloadImages(sources, onComplete) {
+    if (!Array.isArray(sources) || !sources.length) {
+      if (typeof onComplete === "function") onComplete();
+      return;
     }
 
-    // menu constructor
-    
+    let loadedCount = 0;
+    const total = sources.length;
 
-    // scroll shit
-    const scroll_btn = $('<button id="scroll_to_top_btn">↑</button>');
-    $('body').append(scroll_btn);
-
-    $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 200) {
-            $('#scroll_to_top_btn').fadeIn();
-        } else {
-            $('#scroll_to_top_btn').fadeOut();
+    sources.forEach((src) => {
+      const img = new Image();
+      img.onload = img.onerror = () => {
+        loadedCount += 1;
+        if (loadedCount === total && typeof onComplete === "function") {
+          onComplete();
         }
+      };
+      img.src = src;
+    });
+  }
 
-        // google rate promo
-        let scroll_top = $(this).scrollTop();
-        let doc_height = $(document).height();
-        let win_height = $(window).height();
-        let dist_from_bottom = doc_height - (scroll_top + win_height);
+  // -----------------------------
+  // Menu construction
+  // -----------------------------
 
-        if (scroll_top > 150 && dist_from_bottom > 200) {
-            $('#rate_banner').fadeIn(300);
-        } else {
-            $('#rate_banner').fadeOut(300);
+  function buildMenu(menuConfig) {
+    const $categoryList = getElement("#menu-category-list");
+    const $menuSections = getElement("#menu-sections");
+
+    if (!$categoryList || !$menuSections || !menuConfig) return;
+
+    Object.entries(menuConfig).forEach(([categoryKey, categoryData]) => {
+      const categoryLabel = categoryData.category || "";
+      const items = Array.isArray(categoryData.items) ? categoryData.items : [];
+
+      // Category button
+      const $categoryButton = $("<button>", {
+        type: "button",
+        "data-category-target": categoryKey,
+        class: "menu-category-button"
+      }).text(categoryLabel);
+
+      $categoryButton.on("click", () => {
+        const $targetSection = $("#" + categoryKey);
+        if ($targetSection.length) {
+          $targetSection[0].scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
         }
+      });
 
-        let pos = $(window).scrollTop();
+      $categoryList.append($categoryButton);
 
-        $('.category-section').each(function () {
-            let top = $(this).offset().top - 120;
-            let bottom = top + $(this).outerHeight();
-            let id = $(this).attr('id');
+      // Category section
+      const $section = $("<section>", {
+        id: categoryKey,
+        class: "menu-section"
+      });
 
+      const $heading = $("<h2>", {
+        class: "menu-section__title"
+      }).text(categoryLabel);
 
-            if (pos >= top && pos <= bottom) {
-                // Old shit
-                // $(".categories button").removeClass("active");
-                // $(`.categories button[data-target='${id}']`).addClass("active");
+      $section.append($heading);
 
-                $(".categories button").removeClass("active");
-                let $button = $(`.categories button[data-target='${id}']`);
-                $button.addClass("active");
+      // Items
+      items.forEach((item) => {
+        const title = item.title || "";
+        const price = item.price || "";
+        const desc = item.desc || "";
 
-                let $container = $('.categories');
-
-                let button_absolute = $button.offset().left + $container.scrollLeft();
-                let container_absolute = $container.offset().left;
-                let inside = button_absolute - container_absolute;
-                let target_scroll = inside - ($container.width() / 2) + ($button.outerWidth() / 2);
-
-                // mounaki apalo san to cajoline
-                $container[0].scrollTo({
-                    left: target_scroll,
-                    behavior: 'smooth'
-                });
-            }
+        const $item = $("<article>", {
+          class: "menu-item"
         });
+
+        const $itemHeader = $("<div>", {
+          class: "menu-item__header"
+        });
+
+        $("<span>", {
+          class: "menu-item__name"
+        })
+          .text(title)
+          .appendTo($itemHeader);
+
+        $("<span>", {
+          class: "menu-item__price"
+        })
+          .text(`${price}€`)
+          .appendTo($itemHeader);
+
+        const $itemDescription = $("<p>", {
+          class: "menu-item__description"
+        }).html(desc);
+
+        $item.append($itemHeader, $itemDescription);
+        $section.append($item);
+      });
+
+      $menuSections.append($section);
+    });
+  }
+
+  // -----------------------------
+  // UI behaviour
+  // -----------------------------
+
+  function setupBackToTopButton() {
+    let $button = $("#back-to-top-button");
+
+    if (!$button || !$button.length) {
+      $button = $("<button>", {
+        id: "back-to-top-button",
+        type: "button",
+        class: "back-to-top-button",
+        "aria-label": "Μετάβαση στην αρχή της σελίδας"
+      }).text("↑");
+
+      $("body").append($button);
+    }
+
+    $button.on("click", (event) => {
+      event.preventDefault();
+      $("html, body").animate(
+        {
+          scrollTop: 0
+        },
+        SCROLL_TO_TOP_DURATION
+      );
     });
 
-    // google rate promo button
-    $("#rate_banner").on("click", function() {
-        window.open("https://search.google.com/local/writereview?placeid=ChIJNx0QS2J7VxMRBgbs8Gz5zQI", "_blank");
+    return $button;
+  }
+
+  function syncActiveCategoryWithScroll() {
+    const $categoryList = $(".menu-category-list");
+    if (!$categoryList.length) return;
+
+    const scrollTop = $(window).scrollTop();
+    const windowHeight = $(window).height();
+    const docHeight = $(document).height();
+    const distanceFromBottom = docHeight - (scrollTop + windowHeight);
+
+    // Google review banner visibility
+    const $reviewBanner = $("#google-review-banner");
+    if ($reviewBanner.length) {
+      if (
+        scrollTop > GOOGLE_REVIEW_MIN_SCROLL &&
+        distanceFromBottom > GOOGLE_REVIEW_MIN_DISTANCE_FROM_BOTTOM
+      ) {
+        $reviewBanner.stop(true, true).fadeIn(300);
+      } else {
+        $reviewBanner.stop(true, true).fadeOut(300);
+      }
+    }
+
+    // Active category + horizontal centering
+    $(".menu-section").each(function () {
+      const $section = $(this);
+      const top = $section.offset().top - ACTIVE_SECTION_OFFSET_TOP;
+      const bottom = top + $section.outerHeight();
+      const inView = scrollTop >= top && scrollTop <= bottom;
+
+      if (!inView) return;
+
+      const sectionId = $section.attr("id");
+      if (!sectionId) return;
+
+      const $button = $categoryList.find(
+        `button[data-category-target='${sectionId}']`
+      );
+      if (!$button.length) return;
+
+      $categoryList.find("button").removeClass("menu-category-button--active");
+      $button.addClass("menu-category-button--active");
+
+      const containerScrollLeft = $categoryList.scrollLeft();
+      const buttonLeft = $button.offset().left + containerScrollLeft;
+      const containerLeft = $categoryList.offset().left;
+      const relativeLeft = buttonLeft - containerLeft;
+
+      const targetScrollLeft =
+        relativeLeft - $categoryList.width() / 2 + $button.outerWidth() / 2;
+
+      $categoryList[0].scrollTo({
+        left: targetScrollLeft,
+        behavior: "smooth"
+      });
+    });
+  }
+
+  function initNavigationShortcuts() {
+    // Κρατάω τα ίδια class names που ήδη χρησιμοποιείς,
+    // για να μην σπάσει τίποτα σε άλλα pages.
+    $(document).on("click", ".r_menu", () => {
+      window.location.href = "menu.html";
     });
 
-    $('#scroll_to_top_btn').on('click', function () {
-        $('html, body').animate({ scrollTop: 0 }, 400);
+    $(document).on("click", ".not_found_home", () => {
+      window.location.href = "/";
+    });
+  }
+
+  function initGoogleReviewBanner() {
+    const $banner = $("#google-review-banner");
+    if (!$banner.length) return;
+
+    const openReviewPage = () => {
+      window.open(GOOGLE_REVIEW_URL, "_blank", "noopener");
+    };
+
+    $banner.on("click", openReviewPage);
+    $banner.on("keypress", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openReviewPage();
+      }
+    });
+  }
+
+  // -----------------------------
+  // Init
+  // -----------------------------
+
+  $(document).ready(async () => {
+    // Navigation shortcuts
+    initNavigationShortcuts();
+
+    // Back-to-top button
+    const $backToTopButton = setupBackToTopButton();
+
+    // Scroll behaviour
+    $(window).on("scroll", () => {
+      const showScrollTop = $(window).scrollTop() > SCROLL_TOP_THRESHOLD;
+
+      if (showScrollTop) {
+        $backToTopButton.stop(true, true).fadeIn();
+      } else {
+        $backToTopButton.stop(true, true).fadeOut();
+      }
+
+      syncActiveCategoryWithScroll();
     });
 
-    const scroll_style = $(`
-        <style>
-            #scroll_to_top_btn {
-                display: none;
-                position: fixed;
-                right: 18px;
-                bottom: 100px;
-                width: 44px;
-                height: 44px;
-                border-radius: 5px;
-                border: none;
-                background: #EFE7D2;
-                color: #111;
-                font-size: 20px;
-                cursor: pointer;
-                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-                z-index: 2000;
-            }
-        </style>
-    `);
+    // Preload images (background/logo)
+    preloadImages(IMAGE_SOURCES, () => {
+      const $title = $("#menu-title");
+      if ($title.length) {
+        $title.text("ΤΙΜΟΚΑΤΑΛΟΓΟΣ");
+      }
+    });
 
-    $('head').append(scroll_style);
-});
+    // Load menu JSON
+    try {
+      const response = await fetch("./items.json", {
+        cache: "no-store"
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+
+      const data = await response.json();
+      buildMenu(data.menu || {});
+    } catch (error) {
+      console.error("JSON load error:", error);
+    }
+
+    // Google rate banner click
+    initGoogleReviewBanner();
+  });
+})(jQuery);

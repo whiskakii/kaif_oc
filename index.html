@@ -1,52 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="el">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KAIF All Day Bar | Home</title>
 
-    <!-- ✅ SEO TITLE -->
-    <title>KAIF - Coffee & Street Food | Ανατολικό Εορδαίας</title>
+    <!-- SEO -->
+    <meta name="description"
+        content="KAIF All Day Bar Ανατολικό Πτολεμαΐδας - Coffee, Street Food, Cocktails & Delivery. Δες τον κατάλογο και πληροφορίες για παραγγελίες & events." />
+    <link rel="canonical" href="https://kaif.gr/" />
+    <meta property="og:title" content="KAIF All Day Bar" />
+    <meta property="og:description" content="Street food, coffee, cocktails & delivery. Menu, gallery & events." />
+    <meta property="og:image" content="images/kaif_vec.svg" />
 
-    <!-- ✅ SEO DESCRIPTION -->
-    <meta name="description" content="KAIF - Coffee, Street Food, Burgers, Club Sandwich και Drinks. To νεανικό στέκι στο Ανατολικό Εορδαίας. Δες όλο το menu μας εδώ." />
-
-    <!-- ✅ SEO KEYWORDS -->
-    <meta name="keywords" content="KAIF, καφές, street food, μπιφτέκι, burger, club sandwich, ποτά, Ανατολικό Εορδαίας, Ptolemaida" />
-
-    <!-- ✅ OG (Facebook / Instagram / Twitter Preview) -->
-    <meta property="og:title" content="KAIF - Coffee & Street Food" />
-    <meta property="og:description" content="Δες το menu του KAIF. Καφές, street food, burgers, club sandwich, ποτά & χυμοί." />
-    <meta property="og:image" content="https://kaif.gr/preview.jpg" />
-    <meta property="og:url" content="https://kaif.gr" />
-    <meta property="og:type" content="website" />
-
-    <!-- ✅ FAVICON (αν θες) -->
-    <link rel="icon" type="image/svg+xml" href="./images/kaif_vec.svg" />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./styles/main.css" />
-
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-
-    <!-- Icons -->
+    <!-- Icon Library -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" />
+
+    <!-- Styling (same main theme as menu) -->
+    <link rel="stylesheet" href="styles/menu.css" />
+    <link rel="stylesheet" href="styles/home.css" />
 </head>
 
+<body class="site-body">
 
-<body>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <div class="site-logo">
+                <img class="site-logo__image" src="images/kaif_vec.svg" alt="KAIF">
+            </div>
+
+            <div class="site-header__title-wrapper">
+                <p class="site-header__subtitle">COFFEE • COCKTAILS • STREET FOOD</p>
+                <h1 class="site-header__title"></h1>
+            </div>
+
+            <nav class="site-header__nav">
+                <div class="site-header__social">
+                    <a class="site-header__social-link" href="menu.html">MENU</a>
+                    <a class="site-header__social-link" href="#delivery">DELIVERY</a>
+                    <a class="site-header__social-link" href="#gallery">GALLERY</a>
+                    <a class="site-header__social-link" href="#events">EVENTS</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
     <div class="container">
-        <div class="logo">
-            <img src="images/kaif_vec.svg" alt="kaif_all_day_bar_elousa" />
-        </div>
+        <!-- HERO -->
+        <section class="landing-hero">
+            <div class="hero-layer"></div>
+            <div class="hero-content">
+                <h2 class="hero-title">Welcome to KAIF</h2>
+                <p class="hero-sub">Coffee • Street Food • Cocktails • Delivery</p>
 
-        <div id="loading" style="text-align:center; margin-top:40vh; font-size:22px;">
-            Φορτώνει...
-        </div>
+                <div class="hero-cta">
+                    <a href="menu.html" class="btn-kaif">ΤΙΜΟΚΑΤΑΛΟΓΟΣ</a>
+                    <a class="btn-kaif" href="tel:+302463031623">
+                        ΠΑΡΑΓΓΕΛΙΕΣ
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- DELIVERY -->
+        <section id="delivery" class="section-block">
+            <h2 class="section-title">ΕΞΥΠΗΡΕΤΟΥΜΕ</h2>
+
+            <div class="delivery-grid">
+                <div class="delivery-card"><center>Απο τις 9:00πμ ως 2:30μμ & 7:00μμ ως 11:00μμ</center></div>
+                <div class="delivery-card">Ανατολικό <span><strong>Δωρεάν</strong></span></div>
+                <div class="delivery-card">Αγ. Χριστόφορος <span>Ελάχιστη 25€</span></div>
+                <div class="delivery-card">Καρυοχώρι <span>Ελάχιστη  25€</span></div>
+                <div class="delivery-card">Κομνηνά <span>Ελάχιστη 25€</span></div>
+            </div>
+        </section>
+
+
+        <!-- GALLERY -->
+        <section id="gallery" class="section-block">
+            <h2 class="section-title">Gallery Showcase</h2>
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item">
+                    <img src="/images/IMG_0043.JPG" alt="KAIF Photo 1">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="/images/IMG_0072.JPG" alt="KAIF Photo 2">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="/images/IMG_0074.JPG" alt="KAIF Photo 3">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="/images/IMG_0088.JPG" alt="KAIF Photo 4">
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- EVENTS -->
+        <section id="events" class="section-block">
+            <h2 class="section-title">Κρατήσεις & Πληροφορίες</h2>
+            <p>Για κρατήσεις & private nights:</p>
+            <p class="event-phone"><i class="fad fa-phone-alt"></i> +30 698 030 4535</p>
+        </section>
     </div>
 
-    <script src="app.js"></script>
+
+    <footer class="site-footer">
+        <div class="site-footer__logo">
+            <img class="site-footer__logo-image" src="images/kaif_vec.svg" alt="KAIF All Day Bar λογότυπο">
+        </div>
+
+        <div class="site-footer__info">
+            <div>
+                <strong>KAIF ALL DAY BAR | Ανατολικό Πτολεμαΐδας</strong><br>
+                Καφές, street food, ποτά &amp; κοκτέιλ.
+            </div>
+            <div>
+                Ο καταναλωτής δεν έχει την υποχρέωση να πληρώσει εάν δεν παραλάβει το
+                νόμιμο παραστατικό (απόδειξη-τιμολόγιο).
+            </div>
+            <div>Αγορανομικός Υπεύθυνος: Μωυσιάδης Απόστολος</div>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>

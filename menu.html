@@ -1,95 +1,173 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="el">
+  <head>
+    <meta charset="utf-8" />
+    <title>KAIF - Menu | Coffee, Street Food & Cocktails</title>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Επίσημος τιμοκατάλογος KAIF All Day Bar στο Ανατολικό Πτολεμαΐδας. Καφέδες, street food, μπέργκερ, πίτσες, ποτά και κοκτέιλ."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href="https://kaif.gr/menu.html" />
 
-    <!-- TITLE -->
-    <title>KAIF - Menu</title>
+    <!-- Open Graph / Social -->
+    <meta property="og:site_name" content="KAIF All Day Bar" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="KAIF - Menu | Coffee & Street Food" />
+    <meta
+      property="og:description"
+      content="Δες τον πλήρη κατάλογο του KAIF All Day Bar: καφέδες, σπιτικοί χυμοί, street food, μπύρες, ποτά και πίτσες."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/whiskakii/kaif_oc/refs/heads/main/images/kaif_all_day_bar_elousa.jpg"
+    />
+    <meta property="og:url" content="https://kaif.gr/menu.html" />
 
-    <!-- DESCRIPTION -->
-    <meta name="description" content="KAIF Menu - Καφές, Street Food, Burgers, Club Sandwich, Ποτά και Χυμοί.">
+    <link rel="icon" href="images/kaif_vec.svg" type="image/svg+xml" />
 
-    <!-- FAVICON -->
-    <link rel="icon" type="image/svg+xml" href="./images/kaif_vec.svg">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/menu.css" />
 
-    <!-- OG TAGS (Social previews) -->
-    <meta property="og:title" content="KAIF - Menu">
-    <meta property="og:description" content="Δες το πλήρες menu του KAIF. Καφές, Street Food, Burgers & Ποτά.">
-    <meta property="og:image" content="https://kaif.gr/preview.jpg">
-    <meta property="og:url" content="https://kaif.gr/menu.html">
-    <meta property="og:type" content="website">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./styles/menu.css">
+    <!-- App JS -->
+    <script src="app.js" defer></script>
+  </head>
 
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-
-    <!-- Icon Library -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" />
-</head>
-
-
-<body>
-    <header>
-        <div class="header_wrapper">
-            <div class="logo">
-                <img src="images/kaif_vec.svg" alt="kaif_all_day_bar_elousa" />
-            </div>
-
-            <div class="menu-links">
-                <a class="link-item" href="https://instagram.com/kaif.alldaybar" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <a class="link-item" href="https://facebook.com/profile.php?id=61575547387972" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-
-                <a class="link-item" href="https://maps.app.goo.gl/rvE5B1LiBfU1Qu536" target="_blank">
-                    <i class="fas fa-map-marked-alt"></i>
-                </a>
-
-                <a class="link-item" href="tel:+302463031623">
-                    <i class="fas fa-phone"></i>
-                </a>
-            </div>
+  <body class="site-body">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div class="site-logo" aria-label="KAIF All Day Bar">
+          <img
+            class="site-logo__image"
+            src="https://raw.githubusercontent.com/whiskakii/kaif_oc/refs/heads/main/images/kaif_vec.svg"
+            alt="Λογότυπο KAIF All Day Bar"
+          />
         </div>
+
+        <div class="site-header__title-wrapper">
+          <p class="site-header__subtitle">COFFEE • COCKTAILS • STREET FOOD</p>
+          <h1 id="menu-title" class="site-header__title">
+            Φορτώνει τον τιμοκατάλογο...
+          </h1>
+        </div>
+
+        <nav class="site-header__nav" aria-label="Σύνδεσμοι">
+          <div class="site-header__social">
+            <a
+              class="site-header__social-link"
+              href="https://instagram.com/kaif_all_day_bar_elousa"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="KAIF στο Instagram"
+            >
+              Instagram
+            </a>
+            <a
+              class="site-header__social-link"
+              href="https://facebook.com/kaif_all_day_bar_elousa"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="KAIF στο Facebook"
+            >
+              Facebook
+            </a>
+            <a
+              class="site-header__social-link"
+              href="https://maps.app.goo.gl/XXXXXXXX"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="KAIF στο Google Maps"
+            >
+              Maps
+            </a>
+          </div>
+        </nav>
+      </div>
     </header>
 
-    <div class="categories-wrapper">
-        <div class="categories" id="categories"></div>
+    <!-- Sticky category navigation -->
+    <div class="menu-category-nav-wrapper">
+      <nav
+        class="menu-category-list"
+        id="menu-category-list"
+        aria-label="Κατηγορίες καταλόγου"
+      >
+        <!-- Γεμίζει δυναμικά από app.js -->
+      </nav>
     </div>
-    <!-- <div id="offer"></div> -->
-    <div id="catalog"></div>
 
-    <footer>
-        <div class="logo">
-            <img src="images/kaif_vec.svg" alt="kaif_all_day_bar_elousa" />
+    <!-- Main content -->
+    <main class="site-main" id="menu-page" role="main">
+      <!-- Offer / hero section -->
+       
+      <!-- <section id="menu-offer-banner" class="menu-offer-banner" aria-label="Προσφορά">
+        <div class="menu-offer-banner__overlay">
+          <p class="menu-offer-banner__label">ΠΡΟΣΦΟΡΕΣ</p>
+          <p class="menu-offer-banner__text">
+            Δες τις τρέχουσες προσφορές και combos του KAIF στον κατάλογο.
+          </p>
         </div>
-        <div class="footer_info">
-            <div>
-                KAIF ALL DAY BAR | ANATOLIKO PTOLEMAIDAS
-            </div>
+      </section> -->
 
-            <div>
-                Ο καταναλωτής δεν έχει την υποχρέωση να πληρώσει εαν δεν παραλάβει το νόμιμο παραστατικό στοιχείο
-                (απόδειξη-τιμολόγιο)
-            </div>
+      <!-- Menu sections (γεμίζουν από JS μέσω items.json) -->
+      <section
+        id="menu-sections"
+        class="menu-sections"
+        aria-label="Κατηγορίες & Προϊόντα"
+      >
+        <!-- Κατηγορίες + προϊόντα δημιουργούνται από app.js -->
+      </section>
+    </main>
 
-            <div>
-                <b>Αγορανομικός Υπεύθυνος: Μωυσιάδης Απόστολος</b>
-            </div>
+    <!-- Scroll to top button -->
+    <button
+      id="back-to-top-button"
+      class="back-to-top-button"
+      type="button"
+      aria-label="Μετάβαση στην αρχή της σελίδας"
+    >
+      ↑
+    </button>
+
+    <!-- Google review promo -->
+    <div
+      id="google-review-banner"
+      class="google-review-banner"
+      role="button"
+      tabindex="0"
+      aria-label="Κάνε μας αξιολόγηση στο Google"
+    >
+      Κάνε μας
+      <span id="google-review-stars" class="google-review-banner__stars">★★★★★</span>
+      στο Google &amp; πάρε <strong>15% έκπτωση!</strong>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="site-footer__logo">
+        <img
+          class="site-footer__logo-image"
+          src="https://raw.githubusercontent.com/whiskakii/kaif_oc/refs/heads/main/images/kaif_vec.svg"
+          alt="KAIF All Day Bar λογότυπο"
+        />
+      </div>
+
+      <div class="site-footer__info">
+        <div>
+          <strong>KAIF ALL DAY BAR | Ανατολικό Πτολεμαΐδας</strong><br />
+          Καφές, street food, ποτά &amp; κοκτέιλ.
         </div>
+        <div>
+          Ο καταναλωτής δεν έχει την υποχρέωση να πληρώσει εάν δεν παραλάβει το νόμιμο
+          παραστατικό στοιχείο (απόδειξη-τιμολόγιο).
+        </div>
+        <div>Αγορανομικός Υπεύθυνος: Μωυσιάδης Απόστολος</div>
+      </div>
     </footer>
-
-    <div id="rate_banner">
-        Κάνε μας <span id="rate_stars">★★★★★</span> στο Google & πάρε 15% έκπτωση!
-    </div>
-
-    <script type="module" src="app.js"></script>
-</body>
-
+  </body>
 </html>
