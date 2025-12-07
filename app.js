@@ -236,7 +236,7 @@
       window.location.href = "/";
     });
 
-  $(".site-logo").on("click", ".not_found_home", () => {
+  $(document).on("click", ".site-logo", () => {
       window.location.href = "/";
     });
   }
