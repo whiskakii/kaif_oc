@@ -235,6 +235,10 @@
     $(document).on("click", ".not_found_home", () => {
       window.location.href = "/";
     });
+
+  $(".site-logo").on("click", ".not_found_home", () => {
+      window.location.href = "/";
+    });
   }
 
   function initGoogleReviewBanner() {
@@ -305,9 +309,4 @@
     // Google rate banner click
     initGoogleReviewBanner();
   });
-
-   //site logos red to home
-   $(".site-logo").on("click", function(e) {
-       window.href("index.html");
-   })
 })(jQuery);
