@@ -305,4 +305,9 @@
     // Google rate banner click
     initGoogleReviewBanner();
   });
+
+   //site logos red to home
+   $(".site-logo").on("click", function(e) {
+       window.href("index.html");
+   })
 })(jQuery);
