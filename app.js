@@ -1,7 +1,3 @@
-// app.js
-// KAIF – Menu logic (optimized, semantic, responsive)
-// Απαιτεί jQuery
-
 (function ($) {
   "use strict";
 
@@ -226,8 +222,6 @@
   }
 
   function initNavigationShortcuts() {
-    // Κρατάω τα ίδια class names που ήδη χρησιμοποιείς,
-    // για να μην σπάσει τίποτα σε άλλα pages.
     $(document).on("click", ".r_menu", () => {
       window.location.href = "menu.html";
     });
